@@ -5,7 +5,7 @@
 
 ## Function
 - `bottonMode()` 座標指定設定rectMode関数等と同様に使用可
-- `setPoint(x, y, _x, _y)` ボタンの座標設定rect関数等と同様に使用可
+- `botton(x, y, _x, _y)` ボタンの座標設定rect関数等と同様に使用可
 - `hover()` カーソルが上にあるかどうか
 - `click()` ボタン後された瞬間かどうか
 - `Press()` ボタンが押されているかどうか
