@@ -1,14 +1,23 @@
 /*ボタンの当たり判定を作成するクラス*/
 
 class Botton {
-  private int bottonMode;
-  private float left_x,  left_y;
-  private float right_x, right_y;
+  private int bottonMode = CORNER;
+  private float x, y, _x, _y;
+  private float left_x, left_y, right_x, right_y;
 
   private boolean lastClick;
 
   void botton(float x, float y, float _x, float _y) {
-    switch(bottonMode) {
+    this.x = x;
+    this.y = y;
+    this._x = _x;
+    this._y = _y;
+    bottonMode(bottonMode);
+  }
+
+  void bottonMode(int mode) {
+    bottonMode = mode;
+    switch(mode) {
     case CORNER:
       left_x = x;
       left_y = y;
@@ -36,10 +45,6 @@ class Botton {
     }
   }
 
-  void bottonMode(int mode) {
-    bottonMode = mode;
-  }
-
   boolean hover() {
     if (left_x <= mouseX && mouseX <=right_x && left_y <= mouseY && mouseY <=right_y)
       return true;
@@ -61,6 +66,19 @@ class Botton {
       && mousePressed)
       return true;
     return false;
+  }
+
+  float x() {
+    return x;
+  }
+  float y() {
+    return y;
+  }
+  float _x() {
+    return _x;
+  }
+  float _y() {
+    return _y;
   }
 
   void drawBotton() {
