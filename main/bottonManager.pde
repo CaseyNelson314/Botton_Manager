@@ -7,7 +7,7 @@ class Botton {
 
   private boolean lastClick;
 
-  void setPoint(float x, float y, float _x, float _y) {
+  void botton(float x, float y, float _x, float _y) {
     switch(bottonMode) {
     case CORNER:
       left_x = x;
