@@ -8,8 +8,8 @@ void setup() {
 void draw() {
   background(255);
 
-  botton0.setPoint(100, 100, 300, 100);
-  botton1.setPoint(500, 100, 300, 100);
+  botton0.botton(100, 100, 300, 100);
+  botton1.botton(500, 100, 300, 100);
 
   botton0.drawBotton();
   botton1.drawBotton();
