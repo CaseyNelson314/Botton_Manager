@@ -1,5 +1,5 @@
 # Botton_Manager
-## カーソルの当たり判定を作成するクラス
+## カーソルの当たり判定クラス
 
 ![image](https://user-images.githubusercontent.com/91818705/158431943-f4ae09bc-6802-4d91-93c3-621afafd8613.png)
 
