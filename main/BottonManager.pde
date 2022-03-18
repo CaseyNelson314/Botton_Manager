@@ -40,22 +40,22 @@ class Botton {
     case RADIUS:
       left_x = x - _x;
       left_y = y - _y;
-      right_x = left_x + _x*2;
-      right_y = left_y + _y*2;
+      right_x = x + _x;
+      right_y = y + _y;
       break;
     }
   }
 
   boolean hover() {
     if(isStop)return false;
-    if (left_x <= mouseX && mouseX <=right_x && left_y <= mouseY && mouseY <=right_y)
+    if (left_x <= mouseX && mouseX <right_x && left_y <= mouseY && mouseY <right_y)
       return true;
     return false;
   }
 
   boolean click() {
     if(isStop)return false;
-    if (left_x <= mouseX && mouseX <=right_x && left_y <= mouseY && mouseY <=right_y
+    if (left_x <= mouseX && mouseX <right_x && left_y <= mouseY && mouseY <right_y
       && mousePressed && lastClick==false) {
       lastClick = true;
       return true;
@@ -66,7 +66,7 @@ class Botton {
 
   boolean press() {
     if(isStop)return false;
-    if (left_x <= mouseX && mouseX <=right_x && left_y <= mouseY && mouseY <=right_y
+    if (left_x <= mouseX && mouseX <right_x && left_y <= mouseY && mouseY <right_y
       && mousePressed)
       return true;
     return false;
