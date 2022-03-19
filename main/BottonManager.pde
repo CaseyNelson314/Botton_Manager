@@ -97,9 +97,9 @@ class Botton {
       fill(150,100);
     else
       noFill();
-    rectMode(CORNERS);
+    rectMode(bottonMode);
     stroke(0);
-    rect(left_x, left_y, right_x, right_y);
+    rect(x, y, _x, _y);
     rectMode(CORNER);
 
     fill(0);
