@@ -94,7 +94,7 @@ class Botton {
   
   void drawBotton() {
     if (hover())
-      fill(150);
+      fill(150,100);
     else
       noFill();
     rectMode(CORNERS);
