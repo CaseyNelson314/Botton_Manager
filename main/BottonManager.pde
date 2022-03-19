@@ -3,12 +3,12 @@
 class Botton {
   private boolean isStop;
   private int bottonMode = CORNER;
-  private float x, y, _x, _y;
-  private float left_x, left_y, right_x, right_y;
+  private int x, y, _x, _y;
+  private int left_x, left_y, right_x, right_y;
 
   private boolean lastClick;
 
-  void botton(float x, float y, float _x, float _y) {
+  void botton(int x, int y, int _x, int _y) {
     this.x = x;
     this.y = y;
     this._x = _x;
@@ -79,16 +79,16 @@ class Botton {
     isStop = false;
   }
 
-  float x() {
+  int x() {
     return x;
   }
-  float y() {
+  int y() {
     return y;
   }
-  float _x() {
+  int _x() {
     return _x;
   }
-  float _y() {
+  int _y() {
     return _y;
   }
   
